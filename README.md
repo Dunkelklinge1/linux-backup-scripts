@@ -2,6 +2,8 @@
 A repository of all my battle proven backup scripts.
 I use them myself for my servers, where the backups have proven to be reliable even in case of full system recovery.
 
+The scripts are executed daily via cronjob.
+
 The scripts depend on multiple backup, compression and archiving tools.
 - **xfsdump** (XFS file system dump)
 - **lzop** (fast and lightweight compression)

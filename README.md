@@ -6,6 +6,7 @@ The scripts depend on following list of backup, compression and archiving tools.
 Credit goes to these projects!
 - **xfsdump** (XFS file system dump)
 - **lzop** (fast and lightweight compression)
+- **zstd** (multi-threaded, fast compression)
 - **borg-backup** (file and directory version backups)
 - **bsdtar** (standard file and directory archiving)
 - **mariadb-dump, pg_dump** (database dump)

@@ -31,13 +31,13 @@ If you want to use some scripts for your own systems:
 - If possible additionally transfer your backups to another physical location (see backup-offsite.sh).
 
 # Purpose of each script
-- backup-vh-root.sh: Backup the bare metal system of a KVM/QEMU hypervisor without VM images (backup suitable for system recovery)
-- backup-root.sh: Backup bare metal system installed on a XFS file system (backup suitable for system recovery)
-- backup-omv-root.sh: Backup bare metal Open Media Vault (OMV) based system (backup suitable for system recovery)
-- backup-nextcloud-database.sh: Backup Nextcloud MariaDB database (does not backup the file structure)
-- backup-bookstack-database.sh: Backup Bookstack MariaDB database (does not backup the file structure)
-- backup-matrix-synapse-database.sh: Backup Matrix Synapse ProstreSQL database (does not backup the file structure)
-- backup-minecraft-server.sh: Backup file structure of Minecraft server
-- backup-mnt-data.sh: Backup file structure of /mnt/data
-- backup-omv-userdata.sh: Backup file structure of a volume mounted by OMV
-- backup-offsite.sh: Transfer backups to another physical location via rsync
+- **backup-vh-root.sh**: Backup the bare metal system of a KVM/QEMU hypervisor without VM images (backup suitable for system recovery)
+- **backup-root.sh**: Backup bare metal system installed on a XFS file system (backup suitable for system recovery)
+- **backup-omv-root.sh**: Backup bare metal Open Media Vault (OMV) based system (backup suitable for system recovery)
+- **backup-nextcloud-database.sh**: Backup Nextcloud MariaDB database (does not backup the file structure)
+- **backup-bookstack-database.sh**: Backup Bookstack MariaDB database (does not backup the file structure)
+- **backup-matrix-synapse-database.sh**: Backup Matrix Synapse ProstreSQL database (does not backup the file structure)
+- **backup-minecraft-server.sh**: Backup file structure of Minecraft server
+- **backup-mnt-data.sh**: Backup file structure of /mnt/data
+- **backup-omv-userdata.sh**: Backup file structure of a volume mounted by OMV
+- **backup-offsite.sh**: Transfer backups to another physical location via rsync

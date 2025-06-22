@@ -3,9 +3,8 @@ A repository of all my battle proven backup scripts.
 I use them myself for my servers, where the backups have proven to be reliable even in cases of full system recoveries.
 
 The scripts depend on multiple backup, compression and archiving tools.
-Make sure you have all of them installed:
-- **xfsdump** (for XFS file system dump)
-- **lzop** (for fast and lightweight compression)
-- **borg-backup** (for file and directory backups)
-- **bsdtar** (for standard file and directory archiving)
-- **mariadb-dump, pg_dump** (for database dump)
+- **xfsdump** (XFS file system dump)
+- **lzop** (fast and lightweight compression)
+- **borg-backup** (file and directory version backups)
+- **bsdtar** (standard file and directory archiving)
+- **mariadb-dump, pg_dump** (database dump)

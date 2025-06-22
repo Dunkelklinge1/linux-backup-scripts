@@ -4,7 +4,7 @@ I use them myself for my servers, where the backups have proven to be reliable e
 
 The scripts are executed daily via cronjob.
 
-The scripts depend on multiple backup, compression and archiving tools.
+The scripts depend on following list of backup, compression and archiving tools:
 - **xfsdump** (XFS file system dump)
 - **lzop** (fast and lightweight compression)
 - **borg-backup** (file and directory version backups)

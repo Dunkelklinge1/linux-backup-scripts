@@ -19,7 +19,7 @@ if grep -qs "$BACKUPMOUNTPOINT " /proc/mounts; then
 	# Deletes files on the destination that does not exist on the source directory
 	# Handles sparse-files efficiently
         # Transfer speed is limited to 20.000Kbps
-        rsync -aAXSv --checksum --delete-during --compress --compress-choice=zstd --bwlimit=20000 $SOURCEDIR $TRANSFERUSER@$REMOTEHOST:$REMOTEDESTINATIONDIR
+        rsync -aAXHSv --checksum --delete-during --compress --compress-choice=zstd --bwlimit=20000 $SOURCEDIR $TRANSFERUSER@$REMOTEHOST:$REMOTEDESTINATIONDIR
 
         echo "Script finished"
     else

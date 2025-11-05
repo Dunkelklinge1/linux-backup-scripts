@@ -26,7 +26,9 @@ The scripts are custom made to fit my own infrastructure.
 To use a script for your own systems, you mostlikely need to adapt it to your own needs.
 - Take a look into each script and check what it's designed for and on what it depends on (for example, I mostly use XFS as file system, therefore xfsdump is used by the script).
 - Each script is small in size and as simple as possible, but at very least you need to modify the variables at the top of each script and adapt it to your own needs.
-- Combine the features of multiple scripts (for exampe for a full Nextcloud server backup use backup-root.sh, backup-nextcloud-database.sh and backup-mnt-data.sh) and use a wrapper script to execute them.
+- Combine the features of multiple scripts (for exampe for a full Nextcloud server backup use backup-root.sh, backup-nextcloud-database.sh and backup-mnt-data.sh).
+- Use a wrapper script to execute multiple scripts.
+- In the wprapper script unmount your backup file system when the backup procedure is finished to protect the backups.
 - Use cron or systemd to execute the scripts on regular basis.
 - A backup is only as good as the recovery. Test your backups regularly for recoverability!
 - If possible additionally transfer your backups to another physical location (see backup-offsite.sh).

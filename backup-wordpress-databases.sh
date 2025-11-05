@@ -12,7 +12,7 @@ mount $BACKUPMOUNTPOINT
 if grep -qs "$BACKUPMOUNTPOINT " /proc/mounts; then
     # Create the destination dir
     mkdir -p $DESTINATIONDIR
-    # Create database dump
+    # Create database dumps
     mariadb-dump --single-transaction -h localhost -u wp_someinstance -p'XXXXXXXXXX' wp_someinstance > "$DESTINATIONDIR/$BACKUPLABEL1.mysqldump"
     #mariadb-dump --single-transaction -h localhost -u wp_someotherinstance -p'XXXXXXXXXX' wp_someotherinstance > "$DESTINATIONDIR/$BACKUPLABEL2.mysqldump"
     # Delete dumps older than 60 days

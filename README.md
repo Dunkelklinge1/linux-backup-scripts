@@ -28,7 +28,7 @@ To use a script for your own systems, you mostlikely need to adapt it to your ow
 - Each script is small in size and as simple as possible, but at very least you need to modify the variables at the top of each script and adapt it to your own needs.
 - Combine the features of multiple scripts (for exampe for a full Nextcloud server backup use backup-root.sh, backup-nextcloud-database.sh and backup-mnt-data.sh).
 - Use a wrapper script to execute multiple scripts.
-- In the wprapper script unmount your backup file system when the backup procedure is finished to protect the backups.
+- In the wrapper script unmount your backup file system when the backup procedure is finished to protect the backups.
 - Use cron or systemd to execute the scripts on regular basis.
 - A backup is only as good as the recovery. Test your backups regularly for recoverability!
 - If possible additionally transfer your backups to another physical location (see backup-offsite.sh).
@@ -36,7 +36,7 @@ To use a script for your own systems, you mostlikely need to adapt it to your ow
 # Purpose of each script
 - **backup-vh-root.sh**: Backup the bare metal system of a KVM/QEMU hypervisor without VM images (backup suitable for system recovery)
 - **backup-root.sh**: Backup bare metal system installed on a XFS file system (backup suitable for system recovery)
-- **backup-omv-root.sh**: Backup bare metal Open Media Vault (OMV) based system (backup suitable for system recovery)
+- **backup-omv-root.sh**: Backup bare metal OpenMediaVault (OMV) based system (backup suitable for system recovery)
 - **backup-nextcloud-database.sh**: Backup Nextcloud MariaDB database (does not backup the file structure)
 - **backup-bookstack-database.sh**: Backup Bookstack MariaDB database (does not backup the file structure)
 - **backup-wordpress-databases.sh**: Backup Wordpress MariaDB databases (multiple databases can be specified, does not backup the file structure)
